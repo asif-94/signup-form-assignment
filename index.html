@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <section id="toast-section">
+            <div id="toast">
+                <p style="font-size:16px; font-weight:500;">Success!</p>
+                <p style="font-size:12px; font-weight:500;">Form Submitted Succesfully.</p>
+            </div>
+        </section>
+        <p>LueurTech Software Solutions</p>
+    </header>
+    <section id="form-section">
+        <form>
+            <div class="inputContainer">
+                <input type="text" name="firstName" id="firstName" placeholder="First Name">
+                <p class="errorText" id="firstNameError"></p>
+            </div>
+            <div class="inputContainer">
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                <p class="errorText" id="lastNameError"></p>
+            </div>
+            <div class="inputContainer">
+                <input type="text" name="User Name" id="userName" placeholder="User Name (max-8)" maxlength="8">
+                <p class="errorText" id="userNameError"></p>
+            </div>
+            <div class="inputContainer" style="position:relative;">
+                <input type="password" name="User Name" id="password" placeholder="Password">
+                <i class="fa fa-eye-slash eye-icon hide" id="eye-icon" aria-hidden="true"></i>
+                <i class="fa fa-eye eye-icon show" id="eye-icon-slash" aria-hidden="true"></i>
+                <p class="errorText" id="passwordError"></p>
+            </div>
+            <div>
+                <button type="submit" name="subButton" id="signUpBtn" onclick="handleSubmit()">Sign Up</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="https://use.fontawesome.com/5f3dbc1674.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

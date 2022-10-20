@@ -1,0 +1,118 @@
+* {
+    margin: 0px !important;
+    padding: 0px !important;
+    box-sizing: border-box !important;
+}
+
+body {
+    background-color: #fafafa;
+    margin: 0px !important;
+    padding: 0px !important;
+    box-sizing: border-box !important;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: relative;
+    padding-top: 12px !important;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+header>p {
+    padding-top: 60px !important;
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#form-section {
+    max-width: 320px;
+    margin: 48px auto !important;
+    height: 380px;
+    padding: 60px 8px !important;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0px 0px 80px 0px #888888;
+}
+
+#form {
+    /* margin: 0px 8px !important; */
+}
+
+.inputContainer {
+    /* margin: 16px 4px !important; */
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-bottom: 1px solid black;
+    height: 24px;
+    padding: 4px !important;
+    margin-top: 4px !important;
+    background: rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+.errorText {
+    height: 16px;
+    font-size: 10px !important;
+    padding-left: 4px !important;
+    color: red;
+}
+
+label {
+    font-size: 14px;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 4px;
+    top: 8px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+button {
+    margin-top: 16px !important;
+    width: 100%;
+    border: none;
+    background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+    padding: 12px 24px !important;
+    border-radius: 20px;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#toast-section {
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    font-size: 16px !important;
+    top: -100px !important;
+    z-index: 999;
+    transition: top 1.5s linear 0s;
+}
+
+#toast {
+    width: fit-content;
+    margin: 0 auto !important;
+    background-color: #1a981a;
+    border-radius: 6px;
+    padding: 4px 8px !important;
+    color: #fafafa;
+}
